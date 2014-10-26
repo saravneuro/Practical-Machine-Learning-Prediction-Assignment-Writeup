@@ -98,13 +98,24 @@ print(rfModel)
 par(mar=c(3,4,4,4))                               
 plot(rfModel)         # Error rate plot for each class
 ```
-
+#### Course Project Submission:
 ```{r}
 varImpPlot(rfModel,cex=.5)  # Importance of Variable on Gini Index
 ```
+```{r}
+setwd(paste0(file.loc,"submission files"))
+answers<- as.vector(out.test)
 
+pml_write_files = function(x){
+  n = length(x)
+  for(i in 1:n){
+    filename = paste0("problem_id_",i,".txt")
+    write.table(x[i],file=filename,quote=FALSE,row.names=FALSE,col.names=FALSE)
+  }
+}
 
-
+pml_write_files(answers)
+```
 
 
 
