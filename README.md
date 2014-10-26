@@ -98,10 +98,11 @@ print(rfModel)
 par(mar=c(3,4,4,4))                               
 plot(rfModel)         # Error rate plot for each class
 ```
-#### Course Project Submission:
+#### Variable important plot:
 ```{r}
 varImpPlot(rfModel,cex=.5)  # Importance of Variable on Gini Index
 ```
+#### Course Project Submission:
 ```{r}
 setwd(paste0(file.loc,"submission files"))
 answers<- as.vector(out.test)
