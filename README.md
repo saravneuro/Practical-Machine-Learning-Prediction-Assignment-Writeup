@@ -7,10 +7,6 @@ date: "Sunday, October 26, 2014"
 output: html_document
 ---
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
 ### Goal: 
 * The goal of my project is to predict the manner in which the exercise was done. This is the "classe" variable in the training set. I am herewith giving a report describing how I built the model, and how I used cross validation, and the expected sample error, and the reason for the choices to use  prediction model to predict 20 different test cases.
 
